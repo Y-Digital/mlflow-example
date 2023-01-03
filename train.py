@@ -59,8 +59,8 @@ if __name__ == "__main__":
 
         mlflow.log_param("alpha", alpha)
         mlflow.log_param("l1_ratio", l1_ratio)
-        mlflow.log_metric("rmse", rmse)
-        mlflow.log_metric("r2", r2)
-        mlflow.log_metric("mae", mae)
+#         mlflow.log_metric("rmse", rmse)
+#         mlflow.log_metric("r2", r2)
+#         mlflow.log_metric("mae", mae)
 
         mlflow.sklearn.log_model(lr, "model")
