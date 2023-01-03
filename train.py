@@ -64,3 +64,5 @@ if __name__ == "__main__":
 #         mlflow.log_metric("mae", mae)
 
         mlflow.sklearn.log_model(lr, "model")
+        from time import sleep
+        sleep(3600)
